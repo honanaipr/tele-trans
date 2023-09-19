@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "tele-trans"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiogram = {extras = ["i18n"], version = "^3.0.0"}
+sqlalchemy = "^2.0.20"
+loguru = "^0.7.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
