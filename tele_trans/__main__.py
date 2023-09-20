@@ -21,11 +21,11 @@ async def message_handler(message: Message, i18n: I18n):
 
 dp.include_router(register_router)
 
+
 @dp.startup()
 async def on_start():
     bot_user = await bot.me()
     logger.info(f"bot started. botname: {bot_user.username}")
-
 
 
 async def main():
