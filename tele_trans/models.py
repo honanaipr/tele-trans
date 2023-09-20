@@ -14,5 +14,5 @@ class User(Base):
     user_name = Column(String, default="")
 
 
-engine = create_engine("sqlite:///database.db", echo=True)
+engine = create_engine("sqlite:///db.sqlite3", echo=True)
 Base.metadata.create_all(engine)
